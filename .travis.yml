@@ -14,6 +14,6 @@ script:
 
 # Run Tests
 after_script:
- - sudo cp libuv.so /usr/lib/
  - cd bin/Debug
+ - ln -s ../../libuv.so
  - nunit-console LibuvSharp.Tests.dll
